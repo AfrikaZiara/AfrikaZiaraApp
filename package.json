@@ -11,9 +11,12 @@
     "sql",
     "database"
   ],
-  "author": "elykips",
+  "author": "Dennis",
   "license": "ISC",
   "dependencies": {
     "mysql": "^2.15.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.15.0"
   }
 }
