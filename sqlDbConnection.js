@@ -1,16 +1,16 @@
 //import mysql package
-var mysql = require('mysql');
+const mysql = require('mysql');
 
 // Connect to mysql database
-var con = mysql.createConnection({
+const con = mysql.createConnection({
   "host" : "localhost",
-  "user" : "elykips",
-  "password":"elykips+254",
+  "user" : "frenx",
+  "password":"POkerface1994",
   "database":"afrikaziara_db"
 });
 
 //check mysql database connection
-con.connect(function(err) {
+const bear= con.connect(function(err) {
   if (err) throw err;
   console.log("Connected!")
 });
