@@ -5,9 +5,9 @@ var express = require('express')
 var path = require('path')
 var ejs = require('ejs')
 
-var azCtrl = require('../controllers/afrikaZiaraController');
+var azCtrl = require('./controllers/afrikaZiaraController');
 
-var port = process.env.PORT || 8001;
+var port = process.env.PORT || 8003;
 
 
 // Connect to mysql database
@@ -21,7 +21,7 @@ var con = mysql.createConnection({
 //check mysql database connection
 con.connect(function(err) {
   if (err) throw err;
-  console.log("Database Connected!")
+  console.log("Database Connection Created!")
 });
 
 //Start Express App
@@ -46,21 +46,17 @@ app.get('/api/v1', function (req, res) {
 // tour-operators route
 app.get('/api/v1/operators', function (req, res) {
   res.render('operators', {
-  	title: 'Operators'
+    title: 'Operators'
   });
 });
 
 // tourists route
 app.get('/api/v1/tourists', function (req, res) {
-	res.render('tourists',{
-		title: 'Tourists'
+  res.render('tourists',{
+    title: 'Tourists'
   })
 });
 
 // Listen Port
 app.listen(port);
 console.log('AfrikaZiara RESTful API server started on: ' + port);
-
-
-
-
