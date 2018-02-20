@@ -13,8 +13,8 @@ var port = process.env.PORT || 3000;
 // Connect to mysql database
 var con = mysql.createConnection({
   "host" : "localhost",
-  "user" : "elykips",
-  "password":"elykips+254",
+  "user" : "frenx",
+  "password":"Pokerface1994",
   "database":"afrikaziara_db"
 });
 
