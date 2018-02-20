@@ -1,2 +1,2 @@
 # AfrikaZiaraApp
-Challenge based market place for tourist and tour operators
+A travel challenge that takes tourists on an African adventure
