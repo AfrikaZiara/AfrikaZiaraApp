@@ -7,7 +7,7 @@ var ejs = require('ejs')
 
 var azCtrl = require('./controllers/afrikaZiaraController');
 
-var port = process.env.PORT || 8003;
+var port = process.env.PORT || 3000;
 
 
 // Connect to mysql database
